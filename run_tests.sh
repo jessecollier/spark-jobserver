@@ -3,9 +3,9 @@
 set -e
 
 echo "Running sbt test and coverage report"
-sbt clean coverage testPython test 
+sbt clean test 
 sbt package
-#coverageReport
+#coverageReport testPython
 #echo "Running pep8 over .py files"
 #find job-server-python/src/python -name *.py -exec $HOME/.local/bin/pep8 {} +
 
